@@ -1,0 +1,4 @@
+Rolename	ModelPermission	TableName	FilterExpression	TableMetadataPermission	columnName	ColumnMetadataPermission
+Non-Sales Data	read	Sales Order Lines		read	Unit Price	none
+Non-Sales Data	read	Sales Order Lines		read	Quantity	none
+Non-Sales Data	read	Sales Order Lines		read	Tax Rate	read
