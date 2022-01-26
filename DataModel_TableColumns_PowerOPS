@@ -1,0 +1,96 @@
+TableName	Type	Name	DataType	IsHidden	IsUnique	IsKey	Expression	DataCategory	SourceColumn	FormatString	SummarizeBy	SortByColumn
+Orders	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+Orders		OrderID	int64	False	False	False			OrderID	0	none	
+Orders		CustomerID	int64	True	False	False			CustomerID	0	none	
+Orders		SalespersonPersonID	int64	True	False	False			SalespersonPersonID	0	none	
+Orders		Comments	string	False	False	False			Comments		none	
+Orders		Order Date	dateTime	True	False	False			Order Date	General Date	none	
+Orders		Expected Delivery Date	dateTime	True	False	False			Expected Delivery Date	General Date	none	
+Orders		Customer Purchase Order Number	int64	False	False	False			Customer Purchase Order Number	0	none	
+Orders		Delivery Instructions	string	False	False	False			Delivery Instructions		none	
+Orders		Internal Comments	string	False	False	False			Internal Comments		none	
+DateTableTemplate_a27b6794-ad8b-48ce-bfb9-1d05f7960e4c	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+DateTableTemplate_a27b6794-ad8b-48ce-bfb9-1d05f7960e4c	calculatedTableColumn	Date	dateTime	True	False	False		PaddedDateTableDates	[Date]		none	
+DateTableTemplate_a27b6794-ad8b-48ce-bfb9-1d05f7960e4c	calculated	Year	int64	True	False	False	YEAR([Date])	Years			none	
+DateTableTemplate_a27b6794-ad8b-48ce-bfb9-1d05f7960e4c	calculated	MonthNo	int64	True	False	False	MONTH([Date])	MonthOfYear			none	
+DateTableTemplate_a27b6794-ad8b-48ce-bfb9-1d05f7960e4c	calculated	Month	string	True	False	False	FORMAT([Date], "MMMM")	Months			none	MonthNo
+DateTableTemplate_a27b6794-ad8b-48ce-bfb9-1d05f7960e4c	calculated	QuarterNo	int64	True	False	False	INT(([MonthNo] + 2) / 3)	QuarterOfYear			none	
+DateTableTemplate_a27b6794-ad8b-48ce-bfb9-1d05f7960e4c	calculated	Quarter	string	True	False	False	"Qtr " & [QuarterNo]	Quarters			none	QuarterNo
+DateTableTemplate_a27b6794-ad8b-48ce-bfb9-1d05f7960e4c	calculated	Day	int64	True	False	False	DAY([Date])	DayOfMonth			none	
+Customers	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+Customers		CustomerID	int64	False	False	False			CustomerID	0	none	
+Customers		StateProvinceCode	string	True	False	False		StateOrProvince	StateProvinceCode		none	
+Customers		StateProvinceName	string	False	False	False		StateOrProvince	StateProvinceName		none	
+Customers		Longitude	double	False	False	False		Longitude	Longitude		none	
+Customers		Latitude	double	False	False	False		Latitude	Latitude		none	
+Customers		Customer Name	string	False	False	False			Customer Name		none	
+Customers		Phone Number	string	False	False	False			Phone Number		none	
+Customers		Website URL	string	False	False	False			Website URL		none	
+Customers		Delivery Address Line 1	string	False	False	False			Delivery Address Line 1		none	
+Customers		Delivery Address Line 2	string	False	False	False			Delivery Address Line 2		none	
+Customers		Delivery Postal Code	int64	False	False	False			Delivery Postal Code	0	none	
+Customers		City	string	False	False	False			City		none	
+Customers		Sales Territory	string	False	False	False			Sales Territory		none	
+Employees	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+Employees		PersonID	int64	False	False	False			PersonID	0	none	
+Employees		Full Name	string	False	False	False			Full Name		none	
+Employees		Preferred Name	string	False	False	False			Preferred Name		none	
+Employees		Is Employee	boolean	False	False	False			Is Employee	"TRUE";"TRUE";"FALSE"	none	
+Employees		Is Salesperson	boolean	False	False	False			Is Salesperson	"TRUE";"TRUE";"FALSE"	none	
+Employees		Phone Number	string	False	False	False			Phone Number		none	
+Employees		Email Address	string	False	False	False			Email Address		none	
+Customer Transactions	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+Customer Transactions		CustomerTransactionID	int64	False	False	False			CustomerTransactionID	0	none	
+Customer Transactions		CustomerID	int64	True	False	False			CustomerID	0	none	
+Customer Transactions		TransactionTypeID	int64	False	False	False			TransactionTypeID	0	none	
+Customer Transactions		InvoiceID	string	False	False	False			InvoiceID		none	
+Customer Transactions		Amount Excluding Tax	int64	False	False	False			Amount Excluding Tax	0	none	
+Customer Transactions		Tax Amount	int64	False	False	False			Tax Amount	0	none	
+Customer Transactions		Outstanding Balance	int64	False	False	False			Outstanding Balance	0	none	
+Sales Invoices	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+Sales Invoices		CustomerID	int64	True	False	False			CustomerID	0	none	
+Sales Invoices		BillToCustomerID	int64	False	False	False			BillToCustomerID	0	none	
+Sales Invoices		SalespersonPersonID	int64	False	False	False			SalespersonPersonID	0	none	
+Sales Invoices		InvoiceDate	dateTime	True	False	False			InvoiceDate	Long Date	none	
+Sales Invoices		Invoice ID	int64	False	False	False			Invoice ID	0	none	
+Sales Invoices		Customer Purchase Order Number	int64	False	False	False			Customer Purchase Order Number	0	none	
+Sales Order Lines	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+Sales Order Lines		OrderLineID	int64	False	False	False			OrderLineID	0	none	
+Sales Order Lines		OrderID	int64	True	False	False			OrderID	0	none	
+Sales Order Lines		Description	string	False	False	False			Description		none	
+Sales Order Lines		Quantity	int64	False	False	False			Quantity	#,0	none	
+Sales Order Lines		StockItemID	int64	True	False	False			StockItemID	0	none	
+Sales Order Lines		Unit Price	int64	False	False	False			Unit Price	0	none	
+Sales Order Lines		Tax Rate	int64	False	False	False			Tax Rate	0	none	
+Sales Order Lines		Picked Quantity	int64	False	False	False			Picked Quantity	0	none	
+State/Provinces	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+State/Provinces		StateProvinceID	int64	False	False	False			StateProvinceID	0	none	
+State/Provinces		StateProvinceName	string	False	False	False		StateOrProvince	StateProvinceName		none	
+State/Provinces		State/Province	string	False	False	False			State/Province		none	
+State/Provinces		Sales Territory	string	False	False	False			Sales Territory		none	
+Warehouse Items	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+Warehouse Items		StockItemID	int64	False	False	False			StockItemID	0	none	
+Warehouse Items		TaxRate	string	False	False	False			TaxRate		none	
+Warehouse Items		UnitPrice	string	False	False	False			UnitPrice		none	
+Warehouse Items		TypicalWeightPerUnit	string	False	False	False			TypicalWeightPerUnit		none	
+Warehouse Items		Stock Item Name	string	False	False	False			Stock Item Name		none	
+Warehouse Items		Suggested Retail Price	string	False	False	False			Suggested Retail Price		none	
+Calendar	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	False						
+Calendar	calculatedTableColumn	Date	dateTime	False	False	True			[Date]	General Date	none	
+Calendar	calculated	Month Number	int64	False	False	False	MONTH([Date])			0	none	
+Calendar	calculated	Month	string	False	False	False	FORMAT([Date], "MMMM")				none	Month Number
+Calendar	calculated	Year	int64	False	False	False	YEAR([Date])			0	none	
+Calendar	calculated	Weekday Number	int64	False	False	False	WEEKDAY([Date])			0	none	
+Calendar	calculated	Weekday	string	False	False	False	FORMAT([Date], "DDDD")				none	Weekday Number
+LocalDateTable_122364ee-5ea2-43c9-bd59-313817f8dc61	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+LocalDateTable_122364ee-5ea2-43c9-bd59-313817f8dc61	calculatedTableColumn	Date	dateTime	True	False	False		PaddedDateTableDates	[Date]		none	
+LocalDateTable_122364ee-5ea2-43c9-bd59-313817f8dc61	calculated	Year	int64	True	False	False	YEAR([Date])	Years			none	
+LocalDateTable_122364ee-5ea2-43c9-bd59-313817f8dc61	calculated	MonthNo	int64	True	False	False	MONTH([Date])	MonthOfYear			none	
+LocalDateTable_122364ee-5ea2-43c9-bd59-313817f8dc61	calculated	Month	string	True	False	False	FORMAT([Date], "MMMM")	Months			none	MonthNo
+LocalDateTable_122364ee-5ea2-43c9-bd59-313817f8dc61	calculated	QuarterNo	int64	True	False	False	INT(([MonthNo] + 2) / 3)	QuarterOfYear			none	
+LocalDateTable_122364ee-5ea2-43c9-bd59-313817f8dc61	calculated	Quarter	string	True	False	False	"Qtr " & [QuarterNo]	Quarters			none	QuarterNo
+LocalDateTable_122364ee-5ea2-43c9-bd59-313817f8dc61	calculated	Day	int64	True	False	False	DAY([Date])	DayOfMonth			none	
+Measures Table	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+Cars	rowNumber	RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61	int64	True	True	True						
+Cars		Cars	string	False	False	False			Cars		none	
+Cars		InStock	int64	False	False	False			InStock	0	none	
