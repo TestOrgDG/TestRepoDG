@@ -1,0 +1,14 @@
+TableName	isHidden	isPrivate
+Orders		isPrivate
+DateTableTemplate_a27b6794-ad8b-48ce-bfb9-1d05f7960e4c	True	isPrivate
+Customers		isPrivate
+Employees		isPrivate
+Customer Transactions		isPrivate
+Sales Invoices		isPrivate
+Sales Order Lines		isPrivate
+State/Provinces		isPrivate
+Warehouse Items		isPrivate
+Calendar		isPrivate
+LocalDateTable_122364ee-5ea2-43c9-bd59-313817f8dc61	True	isPrivate
+Measures Table		isPrivate
+Cars		isPrivate
