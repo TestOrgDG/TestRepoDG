@@ -1,0 +1,11 @@
+RelationshipName	FromTable	FromColumn	ToTable	ToColumn	JoinOnDateBehavior	State
+fe5d546e-e46d-4731-9fcb-29a54d122103	Orders	CustomerID	Customers	CustomerID		
+fd896763-7c6b-4fbc-ac7b-a19213eaa859	Customer Transactions	CustomerID	Customers	CustomerID		
+108cc19b-978c-46d8-818b-255d1b973cfb	Sales Order Lines	OrderID	Orders	OrderID		
+98e07445-4ae6-4ed2-a0a7-303bb0137213	Orders	SalespersonPersonID	Employees	PersonID		
+b4088290-372b-4204-9ed3-108b686e0d1b	Sales Invoices	CustomerID	Customers	CustomerID		
+b8d38e22-098f-4060-a685-530cd392c1ce	Sales Order Lines	StockItemID	Warehouse Items	StockItemID		
+c71ae31e-c566-442a-b1d7-6d03374e9fd7	Orders	Expected Delivery Date	LocalDateTable_122364ee-5ea2-43c9-bd59-313817f8dc61	Date	datePartOnly	
+d8d6a811-0437-4e40-bd30-a94092c9cc0b	Customers	StateProvinceCode	State/Provinces	State/Province		
+ba6d7dfb-4dd0-4a99-99a0-a0a7d242a831	Orders	Order Date	Calendar	Date		
+a1f319b0-8220-4c0d-ac13-e84fc23d341a	Sales Invoices	InvoiceDate	Calendar	Date		
