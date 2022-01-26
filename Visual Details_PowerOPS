@@ -1,0 +1,14 @@
+VisualId	TableName	ObjectName	ObjectType	Source
+8ceb414b5324992d7944	Customers	Customer Name	Column	Standard
+8ceb414b5324992d7944	Customers	City	Column	Standard
+8ceb414b5324992d7944	Measures Table	Revenue	Measure	Standard
+8ceb414b5324992d7944	Measures Table	Total Line Items	Measure	Standard
+8ceb414b5324992d7944	Measures Table	Total Quantity	Measure	Standard
+8ceb414b5324992d7944	Measures Table	Total Unit Price	Measure	Standard
+8ceb414b5324992d7944	Calendar	Year	Column	Standard
+825617c582cc62a5e43c	Sales Order Lines	Unit Price	Column	Standard
+825617c582cc62a5e43c	State/Provinces	State/Province	Column	Standard
+ddd347ee47fbcc3ff2c7	State/Provinces	Sales Territory	Column	Standard
+ddd347ee47fbcc3ff2c7	Measures Table	Total Quantity	Measure	Standard
+9c6cd93ecfbbfac1f293	Measures Table	InStock	Measure	Standard
+9c6cd93ecfbbfac1f293	Cars	Cars	Column	Standard
