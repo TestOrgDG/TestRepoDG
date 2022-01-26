@@ -1,0 +1,9 @@
+PageName	VisualId	VisualName	VisualType	CustomVisualFlag	VisualHiddenFlag	showAllRoles	X_Coordinate	Y_Coordinate	Z_Coordinate	VisualWidth	VisualHeight	ObjectCount
+Point-3	8ceb414b5324992d7944	pivotTable	pivotTable	False	False		5	105	0	1271	615	7
+Point-3	902820fbcb97cffc6397	textbox	textbox	False	False		5	14	1000	862	66	0
+Point-4	eac130ebde3c60aed85e	textbox	textbox	False	False		13	21	0	862	67	0
+Point-4	825617c582cc62a5e43c	Top 10 Regions by Revenue	columnChart	False	False		9	99	1000	1257	609	2
+Point-5	31e5788d2b99588ca467	textbox	textbox	False	False		13	21	0	862	67	0
+Point-5	ddd347ee47fbcc3ff2c7	clusteredBarChart	clusteredBarChart	False	False		12	111	1000	862	597	2
+Point-6	9c6cd93ecfbbfac1f293	clusteredColumnChart	clusteredColumnChart	False	False	Category	24	99	0	1152	603	2
+Point-6	f7796040a58a3d2ffdd8	textbox	textbox	False	False		13	21	1000	992	67	0
