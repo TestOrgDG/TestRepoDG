@@ -1,0 +1,3 @@
+PageId	PageName	FilterType	FilterOn	ObjectType	ObjectName	TopNValue	Direction	MeasureFilterValue	MeasureFilterCondition
+ReportSectionb521fc00fcafc1fc8ca9	Point-4	TopN	State/Provinces	Column	State/Province	10	2		
+ReportSection1f884f3b09f46c4663dd	Point-5	Advanced	Measures Table	Measure	Total Quantity			1000000L	2
